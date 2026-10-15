@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>هم‌صنعت خوزستان — نسخه نمایشی</title>
+  <meta name="description" content="نمونه اولیه تعاملی درگاه هوشمند خدمات و توسعه کسب‌وکارهای صنعتی؛ همه داده‌ها فرضی هستند.">
+  <meta name="theme-color" content="#0A1633">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="assets/font.css">
+  <link rel="stylesheet" href="assets/base.css">
+  <link rel="stylesheet" href="assets/pages.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="icon-btn only-mobile" data-action="toggle-nav" aria-label="باز کردن منو"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    <a class="brand" href="#/dashboard" aria-label="هم‌صنعت خوزستان — داشبورد">
+      <span class="brand-mark" id="brandMark"></span>
+      <span class="brand-text">
+        <strong>هم‌صنعت خوزستان</strong>
+        <small>درگاه هوشمند خدمات و توسعه کسب‌وکارهای صنعتی</small>
+      </span>
+    </a>
+    <div class="search" id="search">
+      <span class="search-ico" id="searchIco"></span>
+      <input id="searchInput" type="search" placeholder="جست‌وجو در نیازها، محصولات، پرونده‌ها و رویدادها…" autocomplete="off" aria-label="جست‌وجو">
+      <div class="search-results" id="searchResults" hidden></div>
+    </div>
+    <div class="role-switch" id="roleSwitch" role="group" aria-label="نقش کاربر در دمو"></div>
+    <div class="top-actions">
+      <span class="demo-badge" title="همه نام‌ها، اعداد و وضعیت‌ها فرضی‌اند">نسخه نمایشی · داده‌ها فرضی</span>
+      <div class="pop-wrap">
+        <button class="icon-btn bell" id="bellBtn" data-action="toggle-notifs" aria-label="اعلان‌ها"></button>
+        <div class="popover notif-pop" id="notifPop" hidden></div>
+      </div>
+      <div class="pop-wrap">
+        <button class="user-chip" id="userChip" data-action="toggle-usermenu" aria-label="منوی کاربر"></button>
+        <div class="popover user-pop" id="userPop" hidden></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="shell">
+    <aside class="sidebar" id="sidebar" aria-label="منوی اصلی"></aside>
+    <div class="nav-scrim" data-action="toggle-nav"></div>
+    <main class="main" id="view" tabindex="-1"></main>
+  </div>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+
+  <script src="assets/icons.js"></script>
+  <script src="assets/data.js"></script>
+  <script src="assets/core.js"></script>
+  <script src="assets/page-dashboard.js"></script>
+  <script src="assets/page-needs.js"></script>
+  <script src="assets/page-export.js"></script>
+  <script src="assets/page-desk.js"></script>
+  <script src="assets/page-more.js"></script>
+  <script src="assets/main.js"></script>
+</body>
+</html>
